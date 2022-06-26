@@ -1,0 +1,12 @@
+saying = ['After', 'all', 'is', 'said', 'and', 'done','more', 'is', 'said', 'than', 'done']
+unique=set(saying)
+# Converting set to dictionary
+res = dict.fromkeys(saying, 0)
+
+def FrequencyDistribution(saying, res):
+  for word in saying:
+    if word in res.keys():
+      res.update({word:int(res.get(word))+1})
+
+FrequencyDistribution(saying, res)
+res

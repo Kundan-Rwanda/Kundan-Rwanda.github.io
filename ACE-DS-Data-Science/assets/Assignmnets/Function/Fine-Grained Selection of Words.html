@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fine-Grained Selection of Words</title>
+</head>
+<body>
+	<p>
+		Fine-Grained Selection of Words
+Next, let’s look at the long words of a text; perhaps these will be more characteristic
+and informative. For this we adapt some notation from set theory. We would like to
+find the words from the vocabulary of the text that are more than 15 characters long.
+Let’s call this property P, so that P(w) is true if and only if w is more than 15 characters
+long. Now we can express the words of interest using mathematical set notation as
+shown in (1a). This means “the set of all w such that w is an element of V (the vocabu-
+lary) and w has property P.”
+(1) a. {w | w ∈ V & P(w)}
+b. [w for w in V if p(w)]
+The corresponding Python expression is given in (1b). (Note that it produces a list, not
+a set, which means that duplicates are possible.) Observe how similar the two notations
+are. Let’s go one more step and write executable Python code:
+	</p>
+
+	<p>Your Turn: Try out the previous statements in the Python interpreter,
+and experiment with changing the text and changing the length condi-
+tion. Does it make an difference to your results if you change the variable
+names, e.g., using [word for word in vocab if ...]?</p>>
+</body>
+</html>
